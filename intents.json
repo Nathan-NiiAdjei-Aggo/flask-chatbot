@@ -1,0 +1,574 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hey",
+        "hello",
+        "hi",
+        "good morning",
+        "good evening",
+        "hey there"
+      ],
+      "responses": [
+        "Hey :)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye",
+      "goodbye",
+      "see you around",
+      "see you later"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+
+    {
+      "tag": "deny",
+      "patterns": [
+  "no",
+"never",
+"I don't think so",
+"don't like that",
+"no way",
+"not really",
+"I disagree",
+"I don't",
+"nah",
+"nope"
+      ],
+      "responses": [
+        "Bye"
+      ]
+    },
+    {
+      "tag": "admission_deadline",
+      "patterns": [
+        "When does the application window open?",
+        "When does deposit payment deadline happen?",
+        "When is semester registration?"
+      ],
+      "responses": [
+        " For the application window cohort 1 opens on the 6th of February 2024 and for cohort 2 same date",
+        "The deadline payment for hostel,tuition and meal plan is 2nd September 2024 for cohort 1 and 13th January 2025 for cohort 2",
+        "The semester deadline is 20th September 2024 for cohort 1 and for cohort 2 is 31st January 2025"
+      ]
+    },
+    {
+      "tag": "tuition_fees_general",
+      "patterns": [
+        "What are the tuition fees?",
+        "How much does it cost to study engineering?",
+        "Tuition fees for engineering programs"
+      ],
+      "responses": [
+        "The tuition fees for our engineering programs are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year. Which specific engineering program would you like to know more about?"
+      ]
+    },
+    {
+      "tag": "tuition_fees_mechanical_engineering",
+      "patterns": [
+        "How much is tuition for Mechanical Engineering?",
+        "Tuition fees for BSc Mechanical Engineering",
+        "Cost of studying Mechanical Engineering"
+      ],
+      "responses": [
+        "The tuition fees for BSc Mechanical Engineering are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_electronics_communication_engineering",
+      "patterns": [
+        "Tuition fees for Electronics and Communication Engineering",
+        "Cost of BSc Electronics & Communication Engineering",
+        "What does it cost to study Electronics & Communication Engineering?"
+      ],
+      "responses": [
+        "The tuition fees for BSc Electronics & Communication Engineering are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_computer_engineering",
+      "patterns": [
+        "Tuition for Computer Engineering",
+        "How much do I need to pay for Computer Engineering?",
+        "Cost of studying BSc Computer Engineering"
+      ],
+      "responses": [
+        "The tuition fees for BSc Computer Engineering are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_electrical_electronics_engineering",
+      "patterns": [
+        "Cost of Electrical and Electronics Engineering",
+        "Tuition fees for BSc Electrical & Electronics Engineering",
+        "How much is Electrical & Electronics Engineering?"
+      ],
+      "responses": [
+        "The tuition fees for BSc Electrical & Electronics Engineering are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_industrial_systems_engineering",
+      "patterns": [
+        "What are the fees for Industrial and Systems Engineering?",
+        "Tuition for BSc Industrial & Systems Engineering",
+        "Cost of studying Industrial & Systems Engineering"
+      ],
+      "responses": [
+        "The tuition fees for BSc Industrial & Systems Engineering are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_robotics_engineering",
+      "patterns": [
+        "How much does Robotics Engineering cost?",
+        "Tuition fees for BSc Robotics Engineering",
+        "Price of Robotics Engineering course"
+      ],
+      "responses": [
+        "The tuition fees for BSc Robotics Engineering are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_biomedical_engineering",
+      "patterns": [
+        "Tuition fees for Biomedical Engineering",
+        "Cost of BSc Biomedical Engineering",
+        "How much is Biomedical Engineering?"
+      ],
+      "responses": [
+        "The tuition fees for BSc Biomedical Engineering are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_bba_accounting",
+      "patterns": [
+        "How much is tuition for BBA in Accounting?",
+        "Tuition fees for BBA Accounting",
+        "Cost of studying BBA Accounting"
+      ],
+      "responses": [
+        "The tuition fees for BBA Accounting are GH₵31,250 for Ghanaian students and $3,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_bba_banking_finance",
+      "patterns": [
+        "Tuition fees for BBA in Banking and Finance",
+        "Cost of BBA Banking & Finance",
+        "What are the fees for BBA Banking and Finance?"
+      ],
+      "responses": [
+        "The tuition fees for BBA Banking & Finance are GH₵31,250 for Ghanaian students and $3,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_bba_hr_management",
+      "patterns": [
+        "What does it cost to study BBA in Human Resource Management?",
+        "Tuition fees for BBA Human Resource Management",
+        "Cost of BBA Human Resource Management program"
+      ],
+      "responses": [
+        "The tuition fees for BBA Human Resource Management are GH₵31,250 for Ghanaian students and $3,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_bba_marketing",
+      "patterns": [
+        "How much does the BBA Marketing program cost?",
+        "Tuition fees for BBA Marketing",
+        "BBA Marketing tuition expenses"
+      ],
+      "responses": [
+        "The tuition fees for BBA Marketing are GH₵31,250 for Ghanaian students and $3,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_bba_entrepreneurship",
+      "patterns": [
+        "Cost of studying BBA Entrepreneurship",
+        "Tuition fees for BBA Entrepreneurship",
+        "How much is BBA Entrepreneurship?"
+      ],
+      "responses": [
+        "The tuition fees for BBA Entrepreneurship are GH₵37,500 for Ghanaian students and $3,600 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_ba_journalism_mass_comm",
+      "patterns": [
+        "What are the tuition fees for BA Journalism and Mass Communication?",
+        "Cost of BA in Journalism and Mass Communication",
+        "How much do I pay for studying Journalism and Mass Communication?"
+      ],
+      "responses": [
+        "The tuition fees for BA Journalism and Mass Communication are GH₵31,250 for Ghanaian students and $3,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_ba_advertising_public_relations",
+      "patterns": [
+        "Tuition fees for BA Advertising and Public Relations",
+        "Cost of studying BA Advertising and Public Relations",
+        "What does BA Advertising and Public Relations cost?"
+      ],
+      "responses": [
+        "The tuition fees for BA Advertising and Public Relations are GH₵31,250 for Ghanaian students and $3,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_bsc_information_technology",
+      "patterns": [
+        "Tuition for BSc Information Technology",
+        "How much is the BSc Information Technology program?",
+        "Fees for BSc in Information Technology"
+      ],
+      "responses": [
+        "The tuition fees for BSc Information Technology are GH₵43,750 for Ghanaian students and $4,200 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_bsc_computer_science",
+      "patterns": [
+        "What's the tuition for BSc Computer Science?",
+        "Fees for BSc Computer Science",
+        "How much does BSc Computer Science cost?"
+      ],
+      "responses": [
+        "The tuition fees for BSc Computer Science are GH₵43,750 for Ghanaian students and $4,200 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "tuition_fees_bsc_artificial_intelligence",
+      "patterns": [
+        "Tuition fees for BSc Artificial Intelligence",
+        "Cost of BSc Artificial Intelligence",
+        "What are the fees for BSc in Artificial Intelligence?"
+      ],
+      "responses": [
+        "The tuition fees for BSc Artificial Intelligence are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year."
+      ]
+    },
+    {
+      "tag": "bot_challenge",
+      "patterns": [
+         "are you a bot?",
+         "are you a human?",
+         "am I talking to a bot?",
+         "am I talking to a human?",
+         "who are you?",
+         "what is your name?",
+         "what are you?"
+      ],
+      "responses": [
+        "I am a bot, powered by PIEAS Islamabad."
+      ]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "how can i get scholarship?",
+         "criteria for scholarship",
+         "scholarship",
+         "financial aid",
+         "Can anyone guide me about scholarship...?",
+         "I need information about the scholarship procedure.",
+         "I need guidance through the procedure of scholarship application ?",
+         "I need guidance for the application of scholarship.",
+         "What is the process of scholarship application ?",
+         "I need information of the procedure of application of scholarship ?",
+         "what is the process of scholarship?",
+         "how can I get scholarship?",
+         "what is the process of financial aid?",
+         "how can I get financial aid?",
+         "what is the process of need based scholarship",
+         "what about study loan",
+         "how can I get study loan",
+         "how can I apply for study loan",
+         "how can I apply for financial aid",
+         "where can I apply for financial aid?",
+         "where can I apply for scholarship?"
+      ],
+      "responses": [
+        "YES, Scholarships/Financial Aid/Study loan are available at PIEAS. Visit to learn about them at: http://www.pieas.edu.pk/scholarships/"
+      ]
+    },
+
+    {
+      "tag": "past_papers",
+      "patterns": [
+ "where can I get sample test papers",
+ "sample test papers",
+ "past papers",
+ "Do anyone have online material for the prepration of pieas admission test or anylink plz let me know if anyone have?",
+ "I need online preparation material for the pieas admission test.",
+ "What are the updates of the links to online material for the preparation of pieas admission test ?",
+ "What is the information regarding the preparation of pieas admission test through online learning and links ? ",
+ "Online material and links for the preparation of pieas university admission test are urgently needed, I need information regarding this ? ",
+ "Online material for the preparation of pieas university admission test is required, What are the updates with regards to this ? ",
+ "Where can we get past papers of pieas university regarding the entry test ? ",
+ "Where are the past paper of pieas university entry test available ? ",
+ "Where can I get the past papers of pieas university entry test ? ",
+ "Is there anyway I could find the past papers of pieas university entry test ",
+ "Where would I be able to get a hold of the past paper of pieas university entry test ? ",
+ "What is syllabus of entry test As I am an A level student",
+ "What is the syllabus of entry test for an A levels student ?",
+ "What would the syllabus of entry test be for a student who has cleared A levels ?",
+ "I need information about the syllabus of entry test as I am an A levels student.",
+ "I have cleared my A levels, what would the syllabus of entry test be for me ?",
+ "What syllabus to I have to go through for entry test being a student of A levels ?",
+ "How can a person prepare for the pieas entry?",
+ "What are the ways to prepare for the pieas entry test?",
+ "Does anyone know how to prepare for entry test of pieas university?",
+ "where can we get past papers of pieas university ? ",
+ "Where are the past paper of pieas university available ? ",
+ "Where will I be able to get past papers of pieas university from ?",
+ "Is there anyway I could find the past papers of pieas university ? ",
+ "Where would I be able to get a hold of the past paper of pieas university"
+      ],
+      "responses": [
+        "You can get an idea from the past papers.for past papers visit this link http://admissions.pieas.edu.pk/Admissions/Contents/PIEASEntryTest2022PatternforMSPrograms_29042022.pdf"
+      ]
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+        "How can I apply in pieas if I have less than 60% marks in fsc?",
+        "I have less than 60% in fsc, How can I apply in pieas university ?",
+        "What is the procedure of application in pieas university for those students who have achieved less than 60% in fsc ?",
+        "What process should students with less than 60% go through to attain an admission in pieas university ?",
+        "How can a student with less than 60% in fsc apply in pieas university ?",
+        "Through which process can a student who has achieved less than 60% apply in pieas university ?",
+        "I have completed my FSC in 2017 and unfortunately wasted an year after that, Will I be able to apply on the basis of first year ?",
+        "Can I apply on the basis of first year eventhough I cleared my FSC in 2017 and ommited an year after that ?",
+        "I had to miss an year after clearance of my FSC in 2017, Will the university permit me to apply on the basis of my first year ?",
+        "Will I be allowed to apply on the basis of first year despite the fact that I have ommited an year after the clearance of my FSC in 2017",
+        "I cleared FSC in 2017, would I be permitted to apply on the basis of my first year eventhough I have missed an year ?",
+        "Being an improver, will I be able to apply for BSCS ?",
+        "Will I be able to apply for BSCS as I am an improver ?",
+        "Can an improver apply for admission in BSCS ?",
+        "Is it possible for an improver to apply in BSCS ?",
+        "Is it permissible for an improver to apply for admission in BSCS ",
+        "Is it possible to attain admission in BSCS in Islamabad if I have achieved 65% in HSSC-1 and 77 marks in NTS ?  ",
+        "I have attained 65% in HSSC-1 and 77 marks in NTS, Is it possible to get an admission in BSCS in Islamabad ?",
+        "Will it be possible for me to attain an admission in BSCS in Islamabaad if my HSSC-1 percentage is 65% and NTS marks are 77 ? ",
+        "With a result of HSSC-1 65% and 77 marks in NTS, Is there anyway I could get an admission in BSCS in Islamabaad ? ",
+        "Can a student with an aggregate of 65% in HSSC-1 and 77 marks in NTS get an admission in BSCS in Islamabaad?",
+        "what is the eligibility criteria for admission",
+        "what is the selection criteria"
+
+      ],
+      "responses": [
+        "Minimum criteria to apply is 60%. Furthur eligibility criteria could be reffered at http://admissions.pieas.edu.pk/FAQs.html#:~:text=All%20Pakistani%20nationals%20of%20both,at%20least%202000%20or%20more."
+      ]
+    },
+    {
+      "tag": "fee_structure",
+      "patterns": [
+        "what is the admission fees?",
+        "what is the fee structure",
+        "what is the tuition fee",
+        "I need information of the token fees of pieas university ?",
+        "how much token fees will we have to pay in pieas university ?",
+        "What amount is essential for the payment of token fees in pieas university ?",
+        "How much amount is paid for the token fees in pieas university ? ",
+        "I need information on the amount required to be paid as token fees in pieas university ? ",
+        "What will the semester fees be If I appear on the merit list?",
+        "What is the semester fees of the students who are on the merit list ? ",
+        "What will my semester fees be after appearing on the merit list ? ",
+        "How much will my semester fees be if I achieve appearing on the merit list ? ",
+        "After appearing on the merit list, what will my semester fees be ? ",
+
+        "What are the complete fee structure of MSCS ?",
+        "I need information on the complete fee structure of MSCS.",
+        "I need to know the total fee structure of MSCS.",
+        "What are details with regards to the total fee structure of MSCS ?",
+        "Is there any information on the complete fee structure of MSCS ?"
+      ],
+      "responses": [
+        "Fee structure can be viewed at http://admissions.pieas.edu.pk/Academic_Rules/fee_structure.html"
+      ]
+    },
+    {
+      "tag": "Academic City",
+      "patterns": [
+"why Academic City?",
+"is Academic City the number 1 university?",
+"why should i choose Academic City university?",
+"why Academic City is good for me?",
+"why should i apply at Academic City university?",
+"why Academic City university?"
+      ],
+      "responses": [
+        "The Pakistan Institute of Engineering and Applied Sciences, is a public research university located in Islamabad, Pakistan. The university is modelled on international standards with a strong focus on the scientific advancement of the nuclear science-related STEM fields and medical sciences.Founded in 1967 as Reactor School from the sponsorship of the Pakistan Atomic Energy Commission in response to support and manage the nuclear energy infrastructure in the country, the institute started its educational activities with the affiliation of Quaid-e-Azam University, and became Centre for Nuclear Studies (CNS) in 1976— the center gained its new name and became independent as public university in 1997. In 2000, the PIEAS was granted the status of a doctorate degree awarding institute. PIEAS is based on a 150 acres (0.61 km2; 0.23 sq mi) campus and has around 135 full-time faculty members.As of 2017, Higher Education Commission rated PIEAS as the 1st leading engineering university in Pakistan. The QS World University Rankings ranked it as 390th worldwide while QS Asia University Rankings ranked it as 3rd in Pakistan, 189th overall in Asia in 2022. It is ranked 47th in QS top 50 under 50. Located at:Lehtrar Rd, Nilore, Islamabad Capital Territory"
+      ]
+    },
+    {
+      "tag": "offered_programs",
+      "patterns": [
+"What fields of Engineering is offered by pieas university ?",
+"Engineering in pieas university is divided into which different offered fields ?",
+"Which fields of Engineering does pieas university offer to its students ?",
+"What are the sections of Engineering that are offered by pieas university ?",
+"What sections of Engineering does pieas university offer ?",
+"which degree programs are being offered for undergraduate students",
+"which degree programs are being offered for graduate students",
+"which degree programs are being offered for post graduates",
+"which degree programs are being offered for phd"
+      ],
+      "responses": [
+        "BS,MS,PHD Degrres are offered at pieas. Detailed programs can be viewed athttp://www.pieas.edu.pk/departments.cshtml"
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "is there hostel available",
+        "hostel for girls",
+        "hostel facility",
+        "oncampus hostel",
+        "incampus hostel"
+      ],
+      "responses": [
+        "Yes! campus hostel is available at pieas. Details of hostel can be viewed here http://www.pieas.edu.pk/rsd/"
+      ]
+    },
+    {
+      "tag": "test_pattern",
+      "patterns": [
+         "are you a bot?",
+         "are you a human?",
+         "am I talking to a bot?",
+         "am I talking to a human?",
+         "who are you?",
+         "what is your name?",
+         "what are you?"
+      ],
+      "responses": [
+        "English,Maths,IQ and physics are included in NU test. For detailed weightage visit: https://www.eduvision.edu.pk/entry-test/pieas-entry-test--pattern-deadline-weightage-aggregate-merit#:~:text=There%20are%20a%20total%20of,the%20test%20is%203%20hrs."
+      ]
+    }
+    ,
+    {
+      "tag": "negative_marking",
+      "patterns": [
+        "What is the information regarding negative marking ? ",
+        "What are the details about the negative marking ? ",
+        "What are the updates in regards to the negative marking system ? ",
+        "Is there any information available about the negative marking ? ",
+        "How will the negative marking take place ? "
+      ],
+      "responses": [
+        "No, There will be no negative marking in pieas test. For detailes visit: https://www.eduvision.edu.pk/entry-test/pieas-entry-test--pattern-deadline-weightage-aggregate-merit"
+      ]
+    },
+    {
+      "tag": "Domicile",
+      "patterns": [
+"Is There Any Need Of Domicile If We Apply Online From As Overseas Pakistani? ",
+"Does an Overseas Pakistani also has to provide domicile for applying online ? ",
+"Being an Overseas Pakistani, Do I too have to provide a domicile in order to apply online ? ",
+"Is domicile required even from Overseas Pakistani while online application ? ",
+"Applying online as an overseas Pakistani, Will I still have to provide a domicile? ",
+"Will a domicile still be necessary if I apply online as an overseas Pakistani ? "
+      ],
+      "responses": [
+        "Domicile is not needed at the time of test."
+      ]
+    }
+    ,
+    {
+      "tag": "aggregate",
+      "patterns": [
+         "What are the ideal marks required for an admission"
+      ],
+      "responses": [
+        "It depends on current year and department aggregate. For detailes visit: https://pkadmissions.com/merit-calculator/merit-calculator-of-pieas"
+      ]
+    }
+    ,
+    {
+      "tag": "graduation",
+      "patterns": [
+        "duration of graduation",
+        "how many credit hours are required to graduate",
+        "credit hours for graduation",
+        " how many credit hours are in bachelors degree for graduation",
+        " graduation period",
+        " maximum years to graduate"
+      ],
+      "responses": [
+        "Maximum period allowed for graduation is 7 years with 130 credit hours for bachelors degree"
+      ]
+    }
+    ,
+    {
+      "tag": "contact",
+      "patterns": [
+        "how to contact pieas",
+"contact details",
+"how to connect with pieas",
+"how to reach pieas",
+"pieas contact number",
+"pieas contact "
+      ],
+      "responses": [
+        "You can contact pieas at (051) 111 174 327"
+      ]
+    }
+    ,
+    {
+      "tag": "spring_admission",
+      "patterns": [
+        "Spring admission? ",
+        "I need instructions regarding the spring admissions? ",
+        "What are the updates about the spring admissions ? ",
+        "I need information of the spring admissions ? ",
+        "What is the information announced about the spring admissions ? ",
+        "What are the details of the spring admissions ?  ",
+        "admission in spring semester",
+        " what about spring semester admission"
+      ],
+      "responses": [
+        "No spring admissions at pieas."
+      ]
+    }
+    ,
+    {
+      "tag": "Admission_of_former",
+      "patterns": [
+        "What is the procedure of a readmission in an undergraduate program for former students?",
+"What procedure do former students have to go through in order to take an admission in an undergraduate program ?",
+"Does admission test is necessary for readmission in an undergraduate program?",
+"Can a former student on disciplinary warning take readmission into university?",
+"how former student can apply for admission",
+"Can a former student who has been on disciplinary warning get a readmission ?",
+"Is it possible for a former student to get a readmission eventhough he has been on a disciplinary warning ?",
+"What happens if a student on disciplinary warning wants to take readmission in university?",
+"How many times can a former student who has been on 3rd academic warning gain readmission ?",
+"Can a former student who has been on disciplinary warning get a readmission ?",
+"Can a student with 3 academic warnings take admission?",
+"How many times a student is allowed to take admission after 3 academic warnings?"
+      ],
+      "responses": [
+        "A former student of the university seeking readmission in an undergraduate program can do so by taking the relevant admission test. After qualifying for the admission on merit, the student is admitted as a NEW student."
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Acity</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <header class="chatbot-header">
+            <img src="../images/currentAcityLogo.png" alt="University Logo" class="logo">
+            <h1>Acitizen</h1>
+        </header>
+        <div class="chatbot-message-area" id="messageArea"></div>
+        <div class="chatbot-input-area">
+            <input type="text" id="userInput" placeholder="Type your message here..." aria-label="Type your message">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="/chatbot.js"></script>
+</body>
+</html>
