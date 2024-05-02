@@ -1,10 +1,10 @@
 // Function to handle sending messages and receiving responses
 function sendMessage() {
-    var input = document.getElementById('userInput');
-    var messageArea = document.getElementById('messageArea');
+    const input = document.getElementById('userInput');
+    const messageArea = document.getElementById('messageArea');
 
     // Create a new div for the user's message and append it to the message area
-    var userDiv = document.createElement('div');
+    const userDiv = document.createElement('div');
     userDiv.className = 'user-message';
     userDiv.textContent = input.value;  // Use textContent to prevent XSS vulnerabilities
     messageArea.appendChild(userDiv);
@@ -23,7 +23,7 @@ function sendMessage() {
     .then(response => response.json())
     .then(data => {
         // Create a new div for the bot's response and append it to the message area
-        var botDiv = document.createElement('div');
+        const botDiv = document.createElement('div');
         botDiv.className = 'bot-message';
         botDiv.textContent = data.response;  // Safely add server's response
         messageArea.appendChild(botDiv);
@@ -34,7 +34,7 @@ function sendMessage() {
     .catch((error) => {
         console.error('Error:', error);
         // Optionally display a user-friendly error message in the chat interface
-        var errorDiv = document.createElement('div');
+        const errorDiv = document.createElement('div');
         errorDiv.className = 'error-message';
         errorDiv.textContent = 'An error occurred while sending your message.';
         messageArea.appendChild(errorDiv);

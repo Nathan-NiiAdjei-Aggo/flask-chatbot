@@ -1,6 +1,7 @@
 import numpy as np
 import nltk
-# nltk.download('punkt')
+import spacy
+nltk.download('punkt')
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
 
@@ -42,3 +43,19 @@ def bag_of_words(tokenized_sentence, words):
             bag[idx] = 1
 
     return bag
+
+
+# Load the installed model
+nlp = spacy.load('en_core_web_sm')
+
+
+def process_text(text):
+    # Process the text
+    doc = nlp(text)
+    # Extract entities, for instance
+    for entity in doc.ents:
+        print(entity.text, entity.label_)
+
+    # Return something useful
+    return doc.text
+

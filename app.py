@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import chat
 
+
 # This assumes your chatbot logic is in a file named chat.py with a function to handle the chat.
 
 app = Flask(__name__)
