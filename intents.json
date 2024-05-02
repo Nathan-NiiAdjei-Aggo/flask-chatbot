@@ -305,7 +305,7 @@
          "where can I apply for scholarship?"
       ],
       "responses": [
-        "YES, Scholarships/Financial Aid/Study loan are available at PIEAS. Visit to learn about them at: http://www.pieas.edu.pk/scholarships/"
+        "YES, Scholarships/Financial Aid/Study loan are available at PIEAS. Visit to learn about them at: https://www.pieas.edu.pk/scholarships/"
       ]
     },
 
@@ -342,7 +342,7 @@
  "Where would I be able to get a hold of the past paper of pieas university"
       ],
       "responses": [
-        "You can get an idea from the past papers.for past papers visit this link http://admissions.pieas.edu.pk/Admissions/Contents/PIEASEntryTest2022PatternforMSPrograms_29042022.pdf"
+        "You can get an idea from the past papers.for past papers visit this link https://admissions.pieas.edu.pk/Admissions/Contents/PIEASEntryTest2022PatternforMSPrograms_29042022.pdf"
       ]
     },
     {
@@ -374,7 +374,7 @@
 
       ],
       "responses": [
-        "Minimum criteria to apply is 60%. Furthur eligibility criteria could be reffered at http://admissions.pieas.edu.pk/FAQs.html#:~:text=All%20Pakistani%20nationals%20of%20both,at%20least%202000%20or%20more."
+        "Minimum criteria to apply is 60%. Furthur eligibility criteria could be reffered at https://admissions.pieas.edu.pk/FAQs.html#:~:text=All%20Pakistani%20nationals%20of%20both,at%20least%202000%20or%20more."
       ]
     },
     {
@@ -401,7 +401,7 @@
         "Is there any information on the complete fee structure of MSCS ?"
       ],
       "responses": [
-        "Fee structure can be viewed at http://admissions.pieas.edu.pk/Academic_Rules/fee_structure.html"
+        "Fee structure can be viewed at https://admissions.pieas.edu.pk/Academic_Rules/fee_structure.html"
       ]
     },
     {
@@ -432,20 +432,21 @@
 "which degree programs are being offered for phd"
       ],
       "responses": [
-        "BS,MS,PHD Degrres are offered at pieas. Detailed programs can be viewed athttp://www.pieas.edu.pk/departments.cshtml"
+        "BS Degrees are offered at Academic City. For Engineering Programmes we have over 7 courses and for Non Engineering we have 10 courses"
       ]
     },
     {
       "tag": "hostel",
       "patterns": [
         "is there hostel available",
-        "hostel for girls",
         "hostel facility",
         "oncampus hostel",
         "incampus hostel"
       ],
       "responses": [
-        "Yes! campus hostel is available at pieas. Details of hostel can be viewed here http://www.pieas.edu.pk/rsd/"
+        "Yes! we have a campus hostel "
+
+
       ]
     },
     {
@@ -477,21 +478,7 @@
         "No, There will be no negative marking in pieas test. For detailes visit: https://www.eduvision.edu.pk/entry-test/pieas-entry-test--pattern-deadline-weightage-aggregate-merit"
       ]
     },
-    {
-      "tag": "Domicile",
-      "patterns": [
-"Is There Any Need Of Domicile If We Apply Online From As Overseas Pakistani? ",
-"Does an Overseas Pakistani also has to provide domicile for applying online ? ",
-"Being an Overseas Pakistani, Do I too have to provide a domicile in order to apply online ? ",
-"Is domicile required even from Overseas Pakistani while online application ? ",
-"Applying online as an overseas Pakistani, Will I still have to provide a domicile? ",
-"Will a domicile still be necessary if I apply online as an overseas Pakistani ? "
-      ],
-      "responses": [
-        "Domicile is not needed at the time of test."
-      ]
-    }
-    ,
+
     {
       "tag": "aggregate",
       "patterns": [
@@ -532,23 +519,7 @@
       ]
     }
     ,
-    {
-      "tag": "spring_admission",
-      "patterns": [
-        "Spring admission? ",
-        "I need instructions regarding the spring admissions? ",
-        "What are the updates about the spring admissions ? ",
-        "I need information of the spring admissions ? ",
-        "What is the information announced about the spring admissions ? ",
-        "What are the details of the spring admissions ?  ",
-        "admission in spring semester",
-        " what about spring semester admission"
-      ],
-      "responses": [
-        "No spring admissions at pieas."
-      ]
-    }
-    ,
+
     {
       "tag": "Admission_of_former",
       "patterns": [
@@ -568,7 +539,57 @@
       "responses": [
         "A former student of the university seeking readmission in an undergraduate program can do so by taking the relevant admission test. After qualifying for the admission on merit, the student is admitted as a NEW student."
       ]
+    },
+    {
+      "tag": "double_occupancy",
+      "patterns": [
+        "What is the cost for double occupancy?",
+        "Can you tell me about the double occupancy rooms?",
+        "Price for double occupancy",
+        "Details about double occupancy room",
+        "What does double occupancy include?"
+      ],
+      "responses": [
+        "Double Occupancy rooms include a bunk bed for two, a desk and chair per person, a wardrobe and storage closet per person, Wi-Fi access, and a ceiling fan. The pricing for Ghanaian students is GH₵9,375.00 per semester, and for International students, it's $825.00 per semester."
+      ]
+    },
+    {
+      "tag": "double_occupancy_ac",
+      "patterns": [
+        "How much is double occupancy with AC?",
+        "Tell me more about double occupancy rooms with AC",
+        "Cost for double occupancy with air conditioning",
+        "Features of double occupancy plus AC room"
+      ],
+      "responses": [
+        "Double Occupancy +AC rooms offer a bunk bed for two, a desk and chair per person, a split air conditioning unit, wardrobe and storage closet per person, Wi-Fi access, and a ceiling fan. The cost for Ghanaian students is GH₵12,500.00 per semester and $1,150.00 for International students per semester."
+      ]
+    },
+    {
+      "tag": "single_occupancy_ac",
+      "patterns": [
+        "What does the single occupancy with AC cost?",
+        "Details about single occupancy with AC",
+        "Pricing for single occupancy with air conditioning",
+        "Features of single occupancy AC room"
+      ],
+      "responses": [
+        "Single Occupancy + AC rooms include a single bed for one, a desk and chair, a dedicated air conditioning unit, a wardrobe and storage closet, Wi-Fi access, and a ceiling fan. Pricing for Ghanaian students is GH₵25,000.00 per semester and $2,300.00 for International students per semester."
+      ]
+    },
+    {
+      "tag": "room_info",
+      "patterns": [
+        "What types of rooms do you have?",
+        "Can you tell me about the room options?",
+        "Room categories and prices",
+        "Different types of room accommodations"
+      ],
+      "responses": [
+        "We offer several room types including Double Occupancy, Double Occupancy +AC, and Single Occupancy +AC. For more specific information on each type, you can ask about double occupancy, double occupancy with AC, or single occupancy with AC."
+      ]
     }
-
   ]
 }
+
+

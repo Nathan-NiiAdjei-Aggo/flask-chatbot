@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat with Acity</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="chatbot-container">
         <header class="chatbot-header">
-            <img src="/static/images/AcityLogo.jpg"  alt="University Logo" class="logo">
-            <h1 class="heading">Acitizen</h1>
+            <img src="/static/images/AcityLogo.jpg" alt="University Logo" class="logo">
+            <h4 class="heading">Acitizen</h4>
         </header>
-        <div class="chatbot-message-area" id="messageArea"></div>
+        <div class="chatbot-message-area" id="messageArea">
+            <!-- Messages will be dynamically inserted here -->
+        </div>
         <div class="chatbot-input-area">
             <input type="text" id="userInput" placeholder="Type your message here..." aria-label="Type your message">
             <button onclick="sendMessage()">Send</button>
         </div>
     </div>
-    <script src="/static/chatbot.js"></script>
+    <script src="/chatbot.js"></script>
 </body>
 </html>

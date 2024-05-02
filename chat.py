@@ -1,6 +1,6 @@
 import torch
-from templates.model import NeuralNet
-from templates.nltk_utils import tokenize, bag_of_words
+from model import NeuralNet
+from nltk_utils import tokenize, bag_of_words
 import json
 import random
 
