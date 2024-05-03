@@ -44,4 +44,3 @@ def respond_to(input_text):
                 return random.choice(intent['responses'])
     else:
         return "I do not understand..."
-
