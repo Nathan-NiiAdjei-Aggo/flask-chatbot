@@ -22,7 +22,7 @@ function sendMessage() {
     })
     .then(response => response.json())
     .then(data => {
-        // Create a new div for the bot's response and append it to the message area
+        // Create a new div for the bots response and append it to the message area
         const botDiv = document.createElement('div');
         botDiv.className = 'bot-message';
         botDiv.textContent = data.response;  // Safely add server's response
@@ -48,4 +48,15 @@ document.getElementById('userInput').addEventListener('keypress', function(e) {
         sendMessage();
         e.preventDefault();  // Prevent default to avoid any form submission
     }
+
 });
+function reportDissatisfaction() {
+    fetch('/feedback', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({satisfied: 'no'})
+    }).then(response => response.json())
+        .then(data => {
+            document.getElementById('chatbox').innerHTML += `<p>${data.response}</p>`;
+        });
+}

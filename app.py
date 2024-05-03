@@ -18,7 +18,7 @@ def send_message():
     message = request.json['message']
     response = chat.respond_to(message)
     # This function should be defined in your chat.py to handle the message and return a response.
-    return jsonify(response)
+    return jsonify({'response':response})
 
 
 if __name__ == '__main__':

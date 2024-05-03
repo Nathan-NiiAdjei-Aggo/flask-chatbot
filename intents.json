@@ -308,43 +308,106 @@
         "YES, Scholarships/Financial Aid/Study loan are available at PIEAS. Visit to learn about them at: https://www.pieas.edu.pk/scholarships/"
       ]
     },
-
     {
-      "tag": "past_papers",
+      "tag": "president_info",
       "patterns": [
- "where can I get sample test papers",
- "sample test papers",
- "past papers",
- "Do anyone have online material for the prepration of pieas admission test or anylink plz let me know if anyone have?",
- "I need online preparation material for the pieas admission test.",
- "What are the updates of the links to online material for the preparation of pieas admission test ?",
- "What is the information regarding the preparation of pieas admission test through online learning and links ? ",
- "Online material and links for the preparation of pieas university admission test are urgently needed, I need information regarding this ? ",
- "Online material for the preparation of pieas university admission test is required, What are the updates with regards to this ? ",
- "Where can we get past papers of pieas university regarding the entry test ? ",
- "Where are the past paper of pieas university entry test available ? ",
- "Where can I get the past papers of pieas university entry test ? ",
- "Is there anyway I could find the past papers of pieas university entry test ",
- "Where would I be able to get a hold of the past paper of pieas university entry test ? ",
- "What is syllabus of entry test As I am an A level student",
- "What is the syllabus of entry test for an A levels student ?",
- "What would the syllabus of entry test be for a student who has cleared A levels ?",
- "I need information about the syllabus of entry test as I am an A levels student.",
- "I have cleared my A levels, what would the syllabus of entry test be for me ?",
- "What syllabus to I have to go through for entry test being a student of A levels ?",
- "How can a person prepare for the pieas entry?",
- "What are the ways to prepare for the pieas entry test?",
- "Does anyone know how to prepare for entry test of pieas university?",
- "where can we get past papers of pieas university ? ",
- "Where are the past paper of pieas university available ? ",
- "Where will I be able to get past papers of pieas university from ?",
- "Is there anyway I could find the past papers of pieas university ? ",
- "Where would I be able to get a hold of the past paper of pieas university"
+        "Who is the President?",
+        "Tell me about the President and Provost",
+        "Info about Prof. Fred McBagonluri"
       ],
       "responses": [
-        "You can get an idea from the past papers.for past papers visit this link https://admissions.pieas.edu.pk/Admissions/Contents/PIEASEntryTest2022PatternforMSPrograms_29042022.pdf"
+        "Prof. Fred McBagonluri serves as the President and Provost at our institution."
       ]
     },
+    {
+      "tag": "vp_institutional_advancement",
+      "patterns": [
+        "Who is the Vice President of Institutional Advancement?",
+        "What does Ing. Dr. Lucy Agyepong do?",
+        "Details about the VP of Institutional Advancement"
+      ],
+      "responses": [
+        "Ing. Dr. Lucy Agyepong is the Vice President of Institutional Advancement."
+      ]
+    },
+    {
+      "tag": "director_strategy",
+      "patterns": [
+        "Who is the Director of Strategy?",
+        "Tell me about Pawan Varyani",
+        "What does the Director of Strategy do?"
+      ],
+      "responses": [
+        "Pawan Varyani holds the position of Director of Strategy, focusing on developing strategic initiatives for our institution."
+      ]
+    },
+    {
+      "tag": "director_admissions",
+      "patterns": [
+        "Who handles admissions?",
+        "Information on the Director of Admissions",
+        "Who is Shannan Akosua Magee?"
+      ],
+      "responses": [
+        "Shannan Akosua Magee is the Director of Admissions, overseeing all admission-related processes."
+      ]
+    },
+    {
+      "tag": "director_marketing_communications",
+      "patterns": [
+        "Who is the Director of Marketing and Communications?",
+        "Tell me about Nelly Agyemang-Gyamfi's role",
+        "What does the marketing director do?"
+      ],
+      "responses": [
+        "Nelly Agyemang-Gyamfi serves as the Director of Marketing & Communications, responsible for all marketing and public relations efforts."
+      ]
+    },
+    {
+      "tag": "dean_student_affairs",
+      "patterns": [
+        "Who is the Dean of Student and Community Affairs?",
+        "Tell me about Dr. Abena Engmann",
+        "What does the Dean of Student Affairs do?"
+      ],
+      "responses": [
+        "Dr. Abena Engmann is the Dean of Student & Community Affairs, focusing on student welfare and community engagement."
+      ]
+    },
+    {
+      "tag": "director_finance",
+      "patterns": [
+        "Who is the Director of Finance?",
+        "Tell me about the Director of Finance",
+        "What can you tell me about Amit Kakhani?"
+      ],
+      "responses": [
+        "Amit Kakhani is our Director of Finance. He oversees all financial operations and strategy at our organization."
+      ]
+    },
+    {
+      "tag": "registrar",
+      "patterns": [
+        "Who is the Registrar?",
+        "Can you tell me about the Registrar?",
+        "What does Kuukua Nyarko do?"
+      ],
+      "responses": [
+        "Kuukua Nyarko is the Registrar of our university. She manages academic records and registration processes."
+      ]
+    },
+    {
+      "tag": "hr_manager",
+      "patterns": [
+        "Who manages human resources?",
+        "Tell me about the Human Resource Manager",
+        "Who is Bernice Aba Adu-Gyamfi?"
+      ],
+      "responses": [
+        "Bernice Aba Adu-Gyamfi is our Human Resource Manager. She is responsible for overseeing all aspects of human resource management, including recruitment, staff development, and employee relations."
+      ]
+    },
+
     {
       "tag": "admission",
       "patterns": [
