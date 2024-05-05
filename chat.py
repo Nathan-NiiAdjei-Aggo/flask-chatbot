@@ -1,9 +1,9 @@
+import spacy
 import torch
 from model import NeuralNet
 from nltk_utils import tokenize, bag_of_words
 import json
 import random
-
 
 # Load intents file
 with open('intents.json', 'r') as file:

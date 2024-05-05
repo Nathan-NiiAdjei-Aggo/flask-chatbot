@@ -12,7 +12,8 @@
       ],
       "responses": [
         "Hey :)",
-        "Hello, thanks for visiting",
+        "Hi, What can i assist you with?",
+        "Hello, Welcome to Acity",
         "Hi there, what can I do for you?",
         "Hi there, how can I help?"
       ]
@@ -36,24 +37,6 @@
     },
 
     {
-      "tag": "deny",
-      "patterns": [
-  "no",
-"never",
-"I don't think so",
-"don't like that",
-"no way",
-"not really",
-"I disagree",
-"I don't",
-"nah",
-"nope"
-      ],
-      "responses": [
-        "Bye"
-      ]
-    },
-    {
       "tag": "admission_deadline",
       "patterns": [
         "When does the application window open?",
@@ -74,25 +57,27 @@
         "Tuition fees for engineering programs"
       ],
       "responses": [
-        "The tuition fees for our engineering programs are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year. Which specific engineering program would you like to know more about?"
+        "The tuition fees for our engineering programs are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year.Which specific engineering program would you like to know more about?",
+        "For Ghanaian students, the tuition fees for engineering programs are GH₵62,500 per academic year. International students pay $6,000 per year. ",
+        "Our engineering programs have a tuition fee of GH₵62,500 for Ghanaian students and $6,000 for international students annually."
       ]
     },
     {
-      "tag": "tuition_fees_mechanical_engineering",
+      "tag": "mechanical_engineering",
       "patterns": [
         "How much is tuition for Mechanical Engineering?",
         "Tuition fees for BSc Mechanical Engineering",
-        "Cost of studying Mechanical Engineering"
+        "What is the cost of studying Mechanical Engineering?"
       ],
       "responses": [
         "The tuition fees for BSc Mechanical Engineering are GH₵62,500 for Ghanaian students and $6,000 for International students per academic year."
       ]
     },
     {
-      "tag": "tuition_fees_electronics_communication_engineering",
+      "tag": "electronics_communication_engineering",
       "patterns": [
         "Tuition fees for Electronics and Communication Engineering",
-        "Cost of BSc Electronics & Communication Engineering",
+        "What is the cost of BSc Electronics & Communication Engineering",
         "What does it cost to study Electronics & Communication Engineering?"
       ],
       "responses": [
@@ -100,7 +85,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_computer_engineering",
+      "tag": "computer_engineering",
       "patterns": [
         "Tuition for Computer Engineering",
         "How much do I need to pay for Computer Engineering?",
@@ -111,7 +96,22 @@
       ]
     },
     {
-      "tag": "tuition_fees_electrical_electronics_engineering",
+      "tag": "sports",
+            "patterns": [
+                    "What sports do you have on campus?",
+                    "What kind of sports do you play?",
+                    "Which sports do students commonly engage in at this school?",
+                    "What kinds of sports can students participate in on campus?"
+                ],
+            "responses":  [
+                    "On our campus, students can participate in football, basketball, and volleyball.",
+                    "We offer football, basketball, and volleyball for our students to play.",
+                    "The most common sports that students engage in at our school are football, basketball, and volleyball.",
+                    "Students can participate in a variety of sports including football, basketball, and volleyball on campus."
+                ]
+    },
+    {
+      "tag": "electrical_electronics_engineering",
       "patterns": [
         "Cost of Electrical and Electronics Engineering",
         "Tuition fees for BSc Electrical & Electronics Engineering",
@@ -122,7 +122,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_industrial_systems_engineering",
+      "tag": "industrial_systems_engineering",
       "patterns": [
         "What are the fees for Industrial and Systems Engineering?",
         "Tuition for BSc Industrial & Systems Engineering",
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_robotics_engineering",
+      "tag": "robotics_engineering",
       "patterns": [
         "How much does Robotics Engineering cost?",
         "Tuition fees for BSc Robotics Engineering",
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_biomedical_engineering",
+      "tag": "biomedical_engineering",
       "patterns": [
         "Tuition fees for Biomedical Engineering",
         "Cost of BSc Biomedical Engineering",
@@ -155,7 +155,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_bba_accounting",
+      "tag": "bba_accounting",
       "patterns": [
         "How much is tuition for BBA in Accounting?",
         "Tuition fees for BBA Accounting",
@@ -166,7 +166,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_bba_banking_finance",
+      "tag": "bba_banking_finance",
       "patterns": [
         "Tuition fees for BBA in Banking and Finance",
         "Cost of BBA Banking & Finance",
@@ -177,7 +177,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_bba_hr_management",
+      "tag": "bba_hr_management",
       "patterns": [
         "What does it cost to study BBA in Human Resource Management?",
         "Tuition fees for BBA Human Resource Management",
@@ -188,7 +188,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_bba_marketing",
+      "tag": "bba_marketing",
       "patterns": [
         "How much does the BBA Marketing program cost?",
         "Tuition fees for BBA Marketing",
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_bba_entrepreneurship",
+      "tag": "bba_entrepreneurship",
       "patterns": [
         "Cost of studying BBA Entrepreneurship",
         "Tuition fees for BBA Entrepreneurship",
@@ -210,7 +210,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_ba_journalism_mass_comm",
+      "tag": "Journalism_mass_comm",
       "patterns": [
         "What are the tuition fees for BA Journalism and Mass Communication?",
         "Cost of BA in Journalism and Mass Communication",
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_ba_advertising_public_relations",
+      "tag": "Advertising_public_relations",
       "patterns": [
         "Tuition fees for BA Advertising and Public Relations",
         "Cost of studying BA Advertising and Public Relations",
@@ -232,18 +232,18 @@
       ]
     },
     {
-      "tag": "tuition_fees_bsc_information_technology",
+      "tag": "IT",
       "patterns": [
         "Tuition for BSc Information Technology",
-        "How much is the BSc Information Technology program?",
-        "Fees for BSc in Information Technology"
+        "How much is the Bsc Information Technology program?",
+        "What is the fee for Information Technology?"
       ],
       "responses": [
         "The tuition fees for BSc Information Technology are GH₵43,750 for Ghanaian students and $4,200 for International students per academic year."
       ]
     },
     {
-      "tag": "tuition_fees_bsc_computer_science",
+      "tag": "Computer_science",
       "patterns": [
         "What's the tuition for BSc Computer Science?",
         "Fees for BSc Computer Science",
@@ -254,7 +254,7 @@
       ]
     },
     {
-      "tag": "tuition_fees_bsc_artificial_intelligence",
+      "tag": "Artificial_intelligence(AI)",
       "patterns": [
         "Tuition fees for BSc Artificial Intelligence",
         "Cost of BSc Artificial Intelligence",
@@ -280,58 +280,32 @@
       ]
     },
     {
-      "tag": "scholarship",
-      "patterns": [
-        "how can i get scholarship?",
-         "criteria for scholarship",
-         "scholarship",
-         "financial aid",
-         "Can anyone guide me about scholarship...?",
-         "I need information about the scholarship procedure.",
-         "I need guidance through the procedure of scholarship application ?",
-         "I need guidance for the application of scholarship.",
-         "What is the process of scholarship application ?",
-         "I need information of the procedure of application of scholarship ?",
-         "what is the process of scholarship?",
-         "how can I get scholarship?",
-         "what is the process of financial aid?",
-         "how can I get financial aid?",
-         "what is the process of need based scholarship",
-         "what about study loan",
-         "how can I get study loan",
-         "how can I apply for study loan",
-         "how can I apply for financial aid",
-         "where can I apply for financial aid?",
-         "where can I apply for scholarship?"
-      ],
-      "responses": [
-        "YES, Scholarships/Financial Aid/Study loan are available at PIEAS. Visit to learn about them at: https://www.pieas.edu.pk/scholarships/"
-      ]
-    },
-    {
-      "tag": "president_info",
+      "tag": "president",
       "patterns": [
         "Who is the President?",
-        "Tell me about the President and Provost",
-        "Info about Prof. Fred McBagonluri"
+        "Tell me about the President ?",
+        "Who is Professor Fred McBagonluri?"
       ],
       "responses": [
-        "Prof. Fred McBagonluri serves as the President and Provost at our institution."
+        "The President of Academic City is Prof.Fred McBagonluri.",
+        "Professor Fred McBagonluri serves as the President and Provost at our institution.",
+        "Prof.Fred McBagonluri is the President of Academic City University"
       ]
     },
     {
-      "tag": "vp_institutional_advancement",
+      "tag": "vice_president_info",
       "patterns": [
-        "Who is the Vice President of Institutional Advancement?",
-        "What does Ing. Dr. Lucy Agyepong do?",
-        "Details about the VP of Institutional Advancement"
+        "Who is the Vice President of Academic City ?",
+        "What does Ing. Dr. Lucy Agyepong do ?",
+        "Details about the Vice President of Academic City"
       ],
       "responses": [
+        "The Vice President of Academic city is Dr.Lucy Agyepong",
         "Ing. Dr. Lucy Agyepong is the Vice President of Institutional Advancement."
       ]
     },
     {
-      "tag": "director_strategy",
+      "tag": "Director_of_Strategy",
       "patterns": [
         "Who is the Director of Strategy?",
         "Tell me about Pawan Varyani",
@@ -342,7 +316,7 @@
       ]
     },
     {
-      "tag": "director_admissions",
+      "tag": "Director_of_Admissions",
       "patterns": [
         "Who handles admissions?",
         "Information on the Director of Admissions",
@@ -353,7 +327,7 @@
       ]
     },
     {
-      "tag": "director_marketing_communications",
+      "tag": "director of Marketing Communications",
       "patterns": [
         "Who is the Director of Marketing and Communications?",
         "Tell me about Nelly Agyemang-Gyamfi's role",
@@ -364,10 +338,10 @@
       ]
     },
     {
-      "tag": "dean_student_affairs",
+      "tag": "Dean of Students",
       "patterns": [
         "Who is the Dean of Student and Community Affairs?",
-        "Tell me about Dr. Abena Engmann",
+        "Tell me about Dr. Abena Engmann?",
         "What does the Dean of Student Affairs do?"
       ],
       "responses": [
@@ -375,7 +349,7 @@
       ]
     },
     {
-      "tag": "director_finance",
+      "tag": "Finance_Director",
       "patterns": [
         "Who is the Director of Finance?",
         "Tell me about the Director of Finance",
@@ -411,76 +385,15 @@
     {
       "tag": "admission",
       "patterns": [
-        "How can I apply in pieas if I have less than 60% marks in fsc?",
-        "I have less than 60% in fsc, How can I apply in pieas university ?",
-        "What is the procedure of application in pieas university for those students who have achieved less than 60% in fsc ?",
-        "What process should students with less than 60% go through to attain an admission in pieas university ?",
-        "How can a student with less than 60% in fsc apply in pieas university ?",
-        "Through which process can a student who has achieved less than 60% apply in pieas university ?",
-        "I have completed my FSC in 2017 and unfortunately wasted an year after that, Will I be able to apply on the basis of first year ?",
-        "Can I apply on the basis of first year eventhough I cleared my FSC in 2017 and ommited an year after that ?",
-        "I had to miss an year after clearance of my FSC in 2017, Will the university permit me to apply on the basis of my first year ?",
-        "Will I be allowed to apply on the basis of first year despite the fact that I have ommited an year after the clearance of my FSC in 2017",
-        "I cleared FSC in 2017, would I be permitted to apply on the basis of my first year eventhough I have missed an year ?",
-        "Being an improver, will I be able to apply for BSCS ?",
-        "Will I be able to apply for BSCS as I am an improver ?",
-        "Can an improver apply for admission in BSCS ?",
-        "Is it possible for an improver to apply in BSCS ?",
-        "Is it permissible for an improver to apply for admission in BSCS ",
-        "Is it possible to attain admission in BSCS in Islamabad if I have achieved 65% in HSSC-1 and 77 marks in NTS ?  ",
-        "I have attained 65% in HSSC-1 and 77 marks in NTS, Is it possible to get an admission in BSCS in Islamabad ?",
-        "Will it be possible for me to attain an admission in BSCS in Islamabaad if my HSSC-1 percentage is 65% and NTS marks are 77 ? ",
-        "With a result of HSSC-1 65% and 77 marks in NTS, Is there anyway I could get an admission in BSCS in Islamabaad ? ",
-        "Can a student with an aggregate of 65% in HSSC-1 and 77 marks in NTS get an admission in BSCS in Islamabaad?",
-        "what is the eligibility criteria for admission",
-        "what is the selection criteria"
+
 
       ],
       "responses": [
-        "Minimum criteria to apply is 60%. Furthur eligibility criteria could be reffered at https://admissions.pieas.edu.pk/FAQs.html#:~:text=All%20Pakistani%20nationals%20of%20both,at%20least%202000%20or%20more."
+        " "
       ]
     },
-    {
-      "tag": "fee_structure",
-      "patterns": [
-        "what is the admission fees?",
-        "what is the fee structure",
-        "what is the tuition fee",
-        "I need information of the token fees of pieas university ?",
-        "how much token fees will we have to pay in pieas university ?",
-        "What amount is essential for the payment of token fees in pieas university ?",
-        "How much amount is paid for the token fees in pieas university ? ",
-        "I need information on the amount required to be paid as token fees in pieas university ? ",
-        "What will the semester fees be If I appear on the merit list?",
-        "What is the semester fees of the students who are on the merit list ? ",
-        "What will my semester fees be after appearing on the merit list ? ",
-        "How much will my semester fees be if I achieve appearing on the merit list ? ",
-        "After appearing on the merit list, what will my semester fees be ? ",
 
-        "What are the complete fee structure of MSCS ?",
-        "I need information on the complete fee structure of MSCS.",
-        "I need to know the total fee structure of MSCS.",
-        "What are details with regards to the total fee structure of MSCS ?",
-        "Is there any information on the complete fee structure of MSCS ?"
-      ],
-      "responses": [
-        "Fee structure can be viewed at https://admissions.pieas.edu.pk/Academic_Rules/fee_structure.html"
-      ]
-    },
-    {
-      "tag": "Academic City",
-      "patterns": [
-"why Academic City?",
-"is Academic City the number 1 university?",
-"why should i choose Academic City university?",
-"why Academic City is good for me?",
-"why should i apply at Academic City university?",
-"why Academic City university?"
-      ],
-      "responses": [
-        "The Pakistan Institute of Engineering and Applied Sciences, is a public research university located in Islamabad, Pakistan. The university is modelled on international standards with a strong focus on the scientific advancement of the nuclear science-related STEM fields and medical sciences.Founded in 1967 as Reactor School from the sponsorship of the Pakistan Atomic Energy Commission in response to support and manage the nuclear energy infrastructure in the country, the institute started its educational activities with the affiliation of Quaid-e-Azam University, and became Centre for Nuclear Studies (CNS) in 1976— the center gained its new name and became independent as public university in 1997. In 2000, the PIEAS was granted the status of a doctorate degree awarding institute. PIEAS is based on a 150 acres (0.61 km2; 0.23 sq mi) campus and has around 135 full-time faculty members.As of 2017, Higher Education Commission rated PIEAS as the 1st leading engineering university in Pakistan. The QS World University Rankings ranked it as 390th worldwide while QS Asia University Rankings ranked it as 3rd in Pakistan, 189th overall in Asia in 2022. It is ranked 47th in QS top 50 under 50. Located at:Lehtrar Rd, Nilore, Islamabad Capital Territory"
-      ]
-    },
+
     {
       "tag": "offered_programs",
       "patterns": [
@@ -488,7 +401,7 @@
 "Engineering in pieas university is divided into which different offered fields ?",
 "Which fields of Engineering does pieas university offer to its students ?",
 "What are the sections of Engineering that are offered by pieas university ?",
-"What sections of Engineering does pieas university offer ?",
+"What sections of Engineering does Academic City university offer ?",
 "which degree programs are being offered for undergraduate students",
 "which degree programs are being offered for graduate students",
 "which degree programs are being offered for post graduates",
@@ -508,50 +421,8 @@
       ],
       "responses": [
         "Yes! we have a campus hostel "
-
-
       ]
     },
-    {
-      "tag": "test_pattern",
-      "patterns": [
-         "are you a bot?",
-         "are you a human?",
-         "am I talking to a bot?",
-         "am I talking to a human?",
-         "who are you?",
-         "what is your name?",
-         "what are you?"
-      ],
-      "responses": [
-        "English,Maths,IQ and physics are included in NU test. For detailed weightage visit: https://www.eduvision.edu.pk/entry-test/pieas-entry-test--pattern-deadline-weightage-aggregate-merit#:~:text=There%20are%20a%20total%20of,the%20test%20is%203%20hrs."
-      ]
-    }
-    ,
-    {
-      "tag": "negative_marking",
-      "patterns": [
-        "What is the information regarding negative marking ? ",
-        "What are the details about the negative marking ? ",
-        "What are the updates in regards to the negative marking system ? ",
-        "Is there any information available about the negative marking ? ",
-        "How will the negative marking take place ? "
-      ],
-      "responses": [
-        "No, There will be no negative marking in pieas test. For detailes visit: https://www.eduvision.edu.pk/entry-test/pieas-entry-test--pattern-deadline-weightage-aggregate-merit"
-      ]
-    },
-
-    {
-      "tag": "aggregate",
-      "patterns": [
-         "What are the ideal marks required for an admission"
-      ],
-      "responses": [
-        "It depends on current year and department aggregate. For detailes visit: https://pkadmissions.com/merit-calculator/merit-calculator-of-pieas"
-      ]
-    }
-    ,
     {
       "tag": "graduation",
       "patterns": [
@@ -565,46 +436,9 @@
       "responses": [
         "Maximum period allowed for graduation is 7 years with 130 credit hours for bachelors degree"
       ]
-    }
-    ,
-    {
-      "tag": "contact",
-      "patterns": [
-        "how to contact pieas",
-"contact details",
-"how to connect with pieas",
-"how to reach pieas",
-"pieas contact number",
-"pieas contact "
-      ],
-      "responses": [
-        "You can contact pieas at (051) 111 174 327"
-      ]
-    }
-    ,
-
-    {
-      "tag": "Admission_of_former",
-      "patterns": [
-        "What is the procedure of a readmission in an undergraduate program for former students?",
-"What procedure do former students have to go through in order to take an admission in an undergraduate program ?",
-"Does admission test is necessary for readmission in an undergraduate program?",
-"Can a former student on disciplinary warning take readmission into university?",
-"how former student can apply for admission",
-"Can a former student who has been on disciplinary warning get a readmission ?",
-"Is it possible for a former student to get a readmission eventhough he has been on a disciplinary warning ?",
-"What happens if a student on disciplinary warning wants to take readmission in university?",
-"How many times can a former student who has been on 3rd academic warning gain readmission ?",
-"Can a former student who has been on disciplinary warning get a readmission ?",
-"Can a student with 3 academic warnings take admission?",
-"How many times a student is allowed to take admission after 3 academic warnings?"
-      ],
-      "responses": [
-        "A former student of the university seeking readmission in an undergraduate program can do so by taking the relevant admission test. After qualifying for the admission on merit, the student is admitted as a NEW student."
-      ]
     },
     {
-      "tag": "double_occupancy",
+      "tag": "room_double_occupancy",
       "patterns": [
         "What is the cost for double occupancy?",
         "Can you tell me about the double occupancy rooms?",
@@ -617,7 +451,7 @@
       ]
     },
     {
-      "tag": "double_occupancy_ac",
+      "tag": "room_double_occupancy_ac",
       "patterns": [
         "How much is double occupancy with AC?",
         "Tell me more about double occupancy rooms with AC",
@@ -625,23 +459,52 @@
         "Features of double occupancy plus AC room"
       ],
       "responses": [
-        "Double Occupancy +AC rooms offer a bunk bed for two, a desk and chair per person, a split air conditioning unit, wardrobe and storage closet per person, Wi-Fi access, and a ceiling fan. The cost for Ghanaian students is GH₵12,500.00 per semester and $1,150.00 for International students per semester."
+        "Double Occupancy with AC rooms offer a bunk bed for two, a desk and chair per person, a split air conditioning unit, wardrobe and storage closet per person, Wi-Fi access, and a ceiling fan. The cost for Ghanaian students is GH₵12,500.00 per semester and $1,150.00 for International students per semester."
       ]
     },
     {
-      "tag": "single_occupancy_ac",
+      "tag": "single_room_occupancy_ac",
       "patterns": [
         "What does the single occupancy with AC cost?",
-        "Details about single occupancy with AC",
-        "Pricing for single occupancy with air conditioning",
-        "Features of single occupancy AC room"
+        "Details about single room with AC",
+        "Pricing for single room with air conditioning",
+        "Features of single occupancy AC room",
+        "How much does a single room cost?"
       ],
       "responses": [
         "Single Occupancy + AC rooms include a single bed for one, a desk and chair, a dedicated air conditioning unit, a wardrobe and storage closet, Wi-Fi access, and a ceiling fan. Pricing for Ghanaian students is GH₵25,000.00 per semester and $2,300.00 for International students per semester."
       ]
     },
     {
-      "tag": "room_info",
+      "tag": "about",
+      "patterns": [
+        "tell me something about academic city?",
+        "What is your vision?",
+        "Can you tell me about your mission?",
+        "What are the core values of your institution?",
+        "Tell me more about your institution's beliefs.",
+        "What does your institution stand for?",
+        "What are the guiding principles of your university?",
+        "What ideals does your institution hold?"
+            ],
+      "responses": [
+        "Our institution strives to be a world-class leader in learning, innovation, and entrepreneurship. Our mission is to educate future-ready leaders who excel in solving complex problems innovatively within an ethical, entrepreneurial, and collaborative environment. We uphold core values of Excellence, striving to be among the best; Integrity, serving as a source of ethical direction; Innovation, seeking new approaches that impact society positively; Leadership, advancing human dignity and supporting the vulnerable; and Responsibility, embodying servant leadership and strategic partnership in societal advancement. ]"
+      ]
+    },
+    {
+      "tag": "wifi",
+      "patterns":[
+        "Tell me about the wifi?",
+        "How good is the wifi?",
+        "is the wifi good enough"
+      ],
+      "responses": [
+        "The wifi is great. You can do all your assignments and watch lessons to enhance yourself",
+        "It's one of the best "
+      ]
+    },
+    {
+      "tag": "general_room_info",
       "patterns": [
         "What types of rooms do you have?",
         "Can you tell me about the room options?",

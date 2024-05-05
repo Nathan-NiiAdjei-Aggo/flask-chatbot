@@ -22,7 +22,7 @@ function sendMessage() {
     })
     .then(response => response.json())
     .then(data => {
-        // Create a new div for the bots response and append it to the message area
+        // Create a new div for the bot's response and append it to the message area
         const botDiv = document.createElement('div');
         botDiv.className = 'bot-message';
         botDiv.textContent = data.response;  // Safely add server's response
@@ -42,21 +42,37 @@ function sendMessage() {
     });
 }
 
-// Add an event listener to handle when the Enter key is pressed
-document.getElementById('userInput').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter' && !e.shiftKey) {  // Prevent sending messages on pressing 'Enter' with 'Shift'
-        sendMessage();
-        e.preventDefault();  // Prevent default to avoid any form submission
+// Function to handle user dissatisfaction
+function handleNotSatisfied() {
+    const userName = prompt("Please enter your name:");
+    const userEmail = prompt("Please enter your email address:");
+    if (userName && userEmail) {
+        sendDataToServer(userName, userEmail);
+    } else {
+        alert("Name and email are required to proceed!");
     }
-
-});
-function reportDissatisfaction() {
-    fetch('/feedback', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({satisfied: 'no'})
-    }).then(response => response.json())
-        .then(data => {
-            document.getElementById('chatbox').innerHTML += `<p>${data.response}</p>`;
-        });
 }
+
+// Function to send data to server
+function sendDataToServer(name, email) {
+    fetch('/register_complaint', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({name: name, email: email})
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert(data.message); // Response from server
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+// Event listeners for chat interactions
+document.getElementById('userInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {  // Check if 'Enter' key is pressed without the 'Shift' key
+        sendMessage();  // Call the sendMessage function to handle sending the message
+        e.preventDefault();  // Prevent the default action (e.g., form submission)
+    }
+});

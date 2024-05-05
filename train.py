@@ -94,6 +94,10 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 # Train the model
 for epoch in range(num_epochs):
+    total_samples = 0
+    correct_samples = 0
+    total_loss = 0
+
     for (words, labels) in train_loader:
         words = words.to(device)
         labels = labels.to(dtype=torch.long).to(device)
@@ -103,16 +107,24 @@ for epoch in range(num_epochs):
         # if y would be one-hot, we must apply
         # labels = torch.max(labels, 1)[1]
         loss = criterion(outputs, labels)
+        total_loss += loss.item()
+
+        # Calculate predictions for accuracy
+        _, predicted = torch.max(outputs.data, 1)
+        total_samples += labels.size(0)
+        correct_samples += (predicted == labels).sum().item()
 
         # Backward and optimize
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-
+    accuracy = 100 * correct_samples / total_samples
     if (epoch + 1) % 100 == 0:
-        print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}')
+        print(
+            f'Epoch [{epoch + 1}/{num_epochs}], Loss: {total_loss / len(train_loader):.4f}, Accuracy: {accuracy:.2f}%')
 
-print(f'final loss: {loss.item():.4f}')
+    print(f'Final loss: {total_loss / len(train_loader):.4f}, Final accuracy: {accuracy:.2f}%')
+
 
 data = {
     "model_state": model.state_dict(),
