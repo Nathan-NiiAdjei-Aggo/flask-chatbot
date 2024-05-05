@@ -10,17 +10,18 @@
 <body>
     <div class="chatbot-container">
         <header class="chatbot-header">
-            <img src="/static/images/AcityLogo.jpg" alt="University Logo" class="logo">
+            <img src="static/images/AcityLogo.jpg" alt="University Logo" class="logo">
             <h4 class="heading">Acitizen</h4>
         </header>
         <div class="chatbot-message-area" id="messageArea">
             <!-- Messages will be dynamically inserted here -->
         </div>
-        <div class="chatbot-input-area">
-            <input type="text" id="userInput" placeholder="Type your message here..." aria-label="Type your message">
-            <button onclick="sendMessage()">Send</button>
+        <div class="chatbot-input-container">
+            <input type="text" class="chatbot-input" id="userInput" placeholder="Type your message here..." aria-label="Type your message">
+            <button class="chatbot-send-button" onclick="sendMessage()"></button>
         </div>
     </div>
     <script src="/static/chatbot.js"></script>
 </body>
 </html>
+
