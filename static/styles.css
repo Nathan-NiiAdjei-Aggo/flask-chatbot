@@ -105,7 +105,7 @@ body {
   margin-right: 10px;
 }
 .chatbot-send-button {
-  background-image: url("images/envelope.jpg"); /* Set envelope image */
+  background-image: url("images/envelope.png"); /* Set envelope image */
   background-size: cover;
   width: 40px;
   height: 40px;
