@@ -34,6 +34,7 @@ body {
   color: #fff;
   padding: 10px 20px;
   margin-bottom: 10px;
+  margin-right: auto; /* Align to the right for received messages */
   max-width: 70%;
   position: relative;
 }
@@ -45,6 +46,7 @@ body {
   color: #ff4d4d;
   padding: 10px 20px;
   margin-bottom: 10px;
+  margin-left: auto; /* Align to the left for sent messages */
   max-width: 70%;
   position: relative;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
