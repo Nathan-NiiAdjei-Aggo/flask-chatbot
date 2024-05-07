@@ -1,4 +1,3 @@
-// Function to handle sending messages and receiving responses
 function sendMessage() {
     const input = document.getElementById('userInput');
     const messageArea = document.getElementById('messageArea');
@@ -25,7 +24,7 @@ function sendMessage() {
         // Create a new div for the bot's response and append it to the message area
         const botDiv = document.createElement('div');
         botDiv.className = 'bot-message';
-        botDiv.textContent = data.response;  // Safely add server's response
+        botDiv.textContent = data.response;  // Ensure data.response is what you expect
         messageArea.appendChild(botDiv);
 
         // Scroll to the bottom of the message area to show the newest message
@@ -41,38 +40,15 @@ function sendMessage() {
         messageArea.scrollTop = messageArea.scrollHeight;
     });
 }
+document.getElementById('downloadAdmissionForm').addEventListener('click', function() {
+    // Inform the user that the download will start
+    alert('Starting download of the admission form...');
 
-// Function to handle user dissatisfaction
-function handleNotSatisfied() {
-    const userName = prompt("Please enter your name:");
-    const userEmail = prompt("Please enter your email address:");
-    if (userName && userEmail) {
-        sendDataToServer(userName, userEmail);
-    } else {
-        alert("Name and email are required to proceed!");
-    }
-}
+    // Start the file download
+    window.location.href = '/download_admission_form';
 
-// Function to send data to server
-function sendDataToServer(name, email) {
-    fetch('/register_complaint', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({name: name, email: email})
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert(data.message); // Response from server
-    })
-    .catch(error => console.error('Error:', error));
-}
-
-// Event listeners for chat interactions
-document.getElementById('userInput').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter' && !e.shiftKey) {  // Check if 'Enter' key is pressed without the 'Shift' key
-        sendMessage();  // Call the sendMessage function to handle sending the message
-        e.preventDefault();  // Prevent the default action (e.g., form submission)
-    }
+    // Optional: Check if you want to perform any follow-up actions after the user has been prompted
+    setTimeout(() => {
+        alert('Check your downloads folder for the admission form.');
+    }, 5000); // 5 seconds after the initial alert
 });

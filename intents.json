@@ -177,7 +177,7 @@
       ]
     },
     {
-      "tag": "bba_hr_management",
+      "tag": "bba_human_resource_management",
       "patterns": [
         "What does it cost to study BBA in Human Resource Management?",
         "Tuition fees for BBA Human Resource Management",
@@ -210,7 +210,7 @@
       ]
     },
     {
-      "tag": "Journalism_mass_comm",
+      "tag": "journalism_mass_comm",
       "patterns": [
         "What are the tuition fees for BA Journalism and Mass Communication?",
         "Cost of BA in Journalism and Mass Communication",
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "tag": "Advertising_public_relations",
+      "tag": "advertising_public_relations",
       "patterns": [
         "Tuition fees for BA Advertising and Public Relations",
         "Cost of studying BA Advertising and Public Relations",
@@ -265,18 +265,17 @@
       ]
     },
     {
-      "tag": "bot_challenge",
+      "tag": "Creator",
       "patterns": [
-         "are you a bot?",
-         "are you a human?",
-         "am I talking to a bot?",
-         "am I talking to a human?",
-         "who are you?",
-         "what is your name?",
-         "what are you?"
+         "How made you?",
+        "Who built you?",
+        "Who created you?"
+
       ],
       "responses": [
-        "I am a bot, powered by PIEAS Islamabad."
+        "I was made by a Final year student ,Nathan Nii Adjei Aggo",
+        "Nathan Aggo built me",
+        "Nathan is my creator"
       ]
     },
     {
@@ -338,9 +337,10 @@
       ]
     },
     {
-      "tag": "Dean of Students",
+      "tag": "dean_of_students",
       "patterns": [
         "Who is the Dean of Student and Community Affairs?",
+        "Who is the dean of students",
         "Tell me about Dr. Abena Engmann?",
         "What does the Dean of Student Affairs do?"
       ],
@@ -381,17 +381,49 @@
         "Bernice Aba Adu-Gyamfi is our Human Resource Manager. She is responsible for overseeing all aspects of human resource management, including recruitment, staff development, and employee relations."
       ]
     },
-
     {
-      "tag": "admission",
-      "patterns": [
+  "tag": "Fee_payment_in_person",
+  "patterns": [
+    "can I pay in person",
+    "where to pay tuition in person",
+    "is in-person payment available",
+    "office for fee payment",
+    "finance office payment hours"
+  ],
+  "responses": [
+    "You can pay your fees in person at the finance office, which is open during regular business hours. We accept cash payment in USD & GHC. To pay in an alternate currency, contact us and let us know in advance."
+  ]
+},
+{
+  "tag": "Fee_payment_online",
+  "patterns": [
+    "how can I pay my fees online",
+    "online fee payment options",
+    "can I pay my tuition online",
+    "mobile money payments",
+    "website for fee payment"
+  ],
+  "responses": [
+    "You can pay your fees online or through mobile money services. Please visit our university website for detailed instructions and available online payment options."
+  ]
+},
+{
+  "tag": "Fee_payment_bank_transfer",
+  "patterns": [
+    "bank transfer for fees",
+    "which bank to pay fees",
+    "bank account details for tuition payment",
+    "how to make a bank transfer for tuition",
+    "transfer fees to bank account"
+  ],
+  "responses": [
+    "For bank transfers, you can use either Ghana Cedis (GHC) or US Dollars (USD). Here are our bank account details: \n\n* Ghana Bank Account (Option 1):\n  - Account Name: Academic City College (GH) Limited\n  - Ghana Cedi Account Number: 1441002060875\n  - US Dollar Account Number: 3441002060876\n  - Bank Name: EcoBank Ghana Limited\n  - Bank Address: Ministerial Area, 2 Morocco Lane, Off Independence Ave, Accra\n  - Swift Code: ECOCGHAC\n\n* Ghana Bank Account (Option 2):\n  - Account Name: Academic City College (GH) Limited\n  - Ghana Cedi Account Number: 0180223309771\n  - US Dollar Account Number: 0181013309771\n  - Bank Name: Access Bank Ghana Limited\n  - Bank Address: Ring Road Circle Branch, Accra\n  - Swift Code: ABNGGHAC"
+  ]
+},
 
 
-      ],
-      "responses": [
-        " "
-      ]
-    },
+
+
 
 
     {

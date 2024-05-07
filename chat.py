@@ -5,6 +5,7 @@ from nltk_utils import tokenize, bag_of_words
 import json
 import random
 
+
 # Load intents file
 with open('intents.json', 'r') as file:
     intents = json.load(file)
@@ -22,6 +23,9 @@ model_state = model_data["model_state"]
 model = NeuralNet(input_size, hidden_size, output_size)
 model.load_state_dict(model_state)
 model.eval()
+
+
+
 
 
 def respond_to(input_text):
