@@ -25,9 +25,6 @@ model.load_state_dict(model_state)
 model.eval()
 
 
-
-
-
 def respond_to(input_text):
     # Tokenize and preprocess the input text
     sentence = tokenize(input_text)
